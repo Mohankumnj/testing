@@ -1,4 +1,5 @@
 version: 0.2
+
 env:
   variables:
     test: "yes"
@@ -7,13 +8,17 @@ env:
 phases:
   install:
     commands:
-      echo 'installing'
+      - echo 'installing'
+      
   pre_build:
     commands:
-      echo 'pre-build'
+      - echo 'pre-build'
+      
   build:
     commands:
-      echo 'build'
+      - echo 'build'
+      
   post_build:
     commands:
-      echo 'post build'
+      - echo 'post build'
+
